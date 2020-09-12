@@ -24,11 +24,10 @@
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
-              "src/favicon.ico",
               "src/apple-touch-icon.png",
               "src/robots.txt",
               "src/manifest.webmanifest",
-              "src/assets"
+              { "glob": "**/*", "input": "../brand/assets", "output": "/assets/" }
             ],
             "styles": ["src/main.scss"],
             "scripts": []
@@ -101,11 +100,10 @@
             "scripts": [],
             "styles": ["src/main.scss"],
             "assets": [
-              "src/favicon.ico",
               "src/apple-touch-icon.png",
               "src/robots.txt",
               "src/manifest.webmanifest",
-              "src/assets"
+              { "glob": "**/*", "input": "../brand/assets", "output": "/assets/" }
             ]
           },
           "configurations": {
